@@ -19,7 +19,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="viewModel"
+            type="com.example.android.gdgfinder.home.HomeViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -124,6 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:layout_gravity="bottom|end"
+            android:onClick="@{() -> viewModel.onFabClicked()}"
             app:srcCompat="@drawable/ic_gdg">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
